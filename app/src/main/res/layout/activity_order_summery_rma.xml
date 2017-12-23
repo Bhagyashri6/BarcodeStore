@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <FrameLayout
+            android:layout_width="299dp"
+            android:layout_height="450dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ordersummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        app:srcCompat="@drawable/ic_padnote" />
+
+                    <com.atminfotech.barcodestorenew.MyTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="ORDER SUMMARY"
+                        android:textColor="@color/textwhite"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ordernumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ordersummary"
+                    android:layout_marginTop="26dp"
+                    android:orientation="horizontal">
+
+                    <com.atminfotech.barcodestorenew.MyTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.8"
+                        android:gravity="right"
+                        android:text="Your order no.:"
+                        android:textColor="@color/text"
+                        android:textSize="16dp" />
+
+                    <com.atminfotech.barcodestorenew.MyTextView
+                        android:id="@+id/order_no_rma"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="#4343"
+                        android:textColor="@color/textred"
+                        android:textSize="21dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/div1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/ordernumber"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/div" />
+
+
+                <LinearLayout
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div1"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="28dp"
+                        android:layout_gravity="right"/>
+
+                    <com.atminfotech.barcodestorenew.MyTextView
+                        android:id="@+id/date_rma"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="May 14, 2016"
+                        android:textColor="@color/textred"
+                        android:textSize="21dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/div2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/date"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/div" />
+
+                <LinearLayout
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div2"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="44dp"
+                            android:layout_height="44dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:orientation="vertical">
+
+                        <com.atminfotech.barcodestorenew.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="322 University Ave."
+                            android:textColor="@color/text"
+                            android:textSize="17dp" />
+
+                        <com.atminfotech.barcodestorenew.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:text="123 Old Finch Ave."
+                            android:textColor="@color/text"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+                    <!--<LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            app:srcCompat="@drawable/ic_delivery_truck" />
+
+                        <com.atminfotech.barcodestorenew.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="144km"
+                            android:textColor="@color/textred"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>-->
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/div3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/address"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/div" />
+
+                <LinearLayout
+                    android:id="@+id/items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div3"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.atminfotech.barcodestorenew.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="13dp"
+                            android:text="Furniture items"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/text"
+                            android:textSize="17dp" />
+
+                        <com.atminfotech.barcodestorenew.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:drawablePadding="13dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Including boxes"
+                            android:textColor="@color/text"
+                            android:textSize="17dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <com.atminfotech.barcodestorenew.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:text="* 45"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:textColor="@color/textred"
+                            android:textSize="21dp" />
+
+                        <com.atminfotech.barcodestorenew.MyTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="* 6"
+                            android:layout_weight="1"
+                            android:textColor="@color/textred"
+                            android:textSize="21dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/div4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/items"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/div" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/div4"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <com.atminfotech.barcodestorenew.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$"
+                        android:textColor="@color/textred"
+                        android:textSize="16dp" />
+
+                    <com.atminfotech.barcodestorenew.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="1999"
+                        android:textColor="@color/textred"
+                        android:textSize="26dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

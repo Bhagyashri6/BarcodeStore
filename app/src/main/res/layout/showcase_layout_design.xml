@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="300dp"
+      android:background="#f2f2f2">
+
+      <HorizontalScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:scrollbars="none">
+
+          <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent">
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_toRightOf="@+id/tpview"
+                  android:background="@android:color/white"
+                  android:orientation="horizontal">
+
+                  <LinearLayout
+                      android:layout_width="180dp"
+                      android:layout_height="match_parent"
+                      android:gravity="center_horizontal"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:id="@+id/ss_one"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:scaleType="fitXY"
+                          android:layout_margin="2dp"/>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="180dp"
+                      android:layout_height="match_parent"
+                      android:gravity="center_horizontal"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:id="@+id/ss_two"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:scaleType="fitXY"
+                          android:layout_margin="2dp"/>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="180dp"
+                      android:layout_height="match_parent"
+                      android:gravity="center_horizontal"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:id="@+id/ss_three"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:scaleType="fitXY"
+                          android:layout_margin="2dp" />
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="180dp"
+                      android:layout_height="match_parent"
+                      android:gravity="center_horizontal"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:id="@+id/ss_four"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:scaleType="fitXY"
+                          android:layout_margin="2dp"/>
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="180dp"
+                      android:layout_height="match_parent"
+                      android:gravity="center_horizontal"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:id="@+id/ss_five"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:scaleType="fitXY"
+                          android:layout_margin="2dp"/>
+
+                  </LinearLayout>
+
+              </LinearLayout>
+
+          </RelativeLayout>
+
+      </HorizontalScrollView>
+
+      </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/add_to_cart"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/ic_shopping_cart_black"
+            android:layout_margin="25dp"/>
+
+        <ImageView
+            android:id="@+id/playstore"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/ic_playstore"
+            android:layout_margin="25dp"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_below="@+id/showOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="70dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="BARCODE STORE INDIA"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/app_type"
+            android:layout_below="@+id/showOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="110dp"
+            android:layout_gravity="center_horizontal"
+            android:text="The E-Commerce App"
+            android:textColor="@android:color/white"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:background="@color/colorTex"
+            android:layout_marginTop="135dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="50dp"
+            app:srcCompat="@drawable/ic_clock"/>
+
+        <TextView
+            android:id="@+id/time_required"
+            android:layout_below="@+id/showOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="153dp"
+            android:layout_marginLeft="90dp"
+            android:gravity="center"
+            android:text="Approximately 1 Month"
+            android:textColor="@android:color/white"/>
+
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="190dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background_white"
+        android:elevation="15dp"
+        android:scaleType="fitCenter"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/showOff"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"/>
+
+
+    <TextView
+        android:id="@+id/overView"
+        android:layout_below="@+id/showOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="OVERVIEW"
+        android:textColor="@color/about_description_color"/>
+
+    <View
+        android:id="@+id/div5"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_below="@+id/overView"
+        android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/app_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div5"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/about_description_color"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/client_heading"
+            android:layout_below="@+id/app_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:text="Clients using this App :"
+            android:textColor="@color/about_description_color"/>
+
+        <View
+            android:id="@+id/div6"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_below="@+id/client_heading"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/clients_using"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/div6"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/about_description_color"
+            android:text="ATM Infotech"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="devider">#ebebeb</color>
+    <color name="text">#223038</color>
+    <color name="colorSub">#b0afaf</color>
+    <color name="colorTex">#585858</color>
+    <color name="colordevider">#64dad8d8</color>
+
+    <color name="colorPrimary">#F16E57</color>
+    <color name="colorPrimaryDark">#B95645</color>
+    <color name="colorAccent">#2B363E</color>
+
+    <color name="about_twitter_color">#55acee</color>
+    <color name="about_item_icon_color">#313131</color>
+    <color name="about_description_color">#595959</color>
+
+    <color name="about_description1_color">#595959</color>
+    <color name="about_separator_color">#e1e1e1</color>
+    <color name="about_item_text_color">#7c7c7c</color>
+    <color name="about_text_color">#595959</color>
+
+    <color name="shadow_start">#80000000</color>
+    <color name="shadow_end">#00000000</color>
+
+    <color name="div">#d5c5a4</color>
+    <color name="textred">#ca362c</color>
+    <color name="textwhite">#fff</color>
+
+    <color name="colorGray">#495C67</color>
+    <color name="colorOrange">#F68159</color>
+    <color name="colorLightGray">#a6abae</color>
+
+    <color name="tp">#83D5D5</color>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="icvp_min_page_scale_offset" format="dimension"/>
+    <attr name="icvp_center_page_scale_offset" format="dimension"/>
+    <attr name="icvp_min_page_scale" format="float"/>
+    <attr name="icvp_max_page_scale" format="float"/>
+    <attr name="icvp_medium_scaled" format="boolean"/>
+    <attr name="icvp_scroll_duration" format="integer"/>
+    <attr name="icvp_interpolator" format="reference"/>
+
+    <declare-styleable name="HorizontalInfiniteCycleViewPager">
+        <attr name="icvp_min_page_scale_offset"/>
+        <attr name="icvp_center_page_scale_offset"/>
+        <attr name="icvp_min_page_scale"/>
+        <attr name="icvp_max_page_scale"/>
+        <attr name="icvp_medium_scaled"/>
+        <attr name="icvp_scroll_duration"/>
+        <attr name="icvp_interpolator"/>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalInfiniteCycleViewPager">
+        <attr name="icvp_min_page_scale_offset"/>
+        <attr name="icvp_center_page_scale_offset"/>
+        <attr name="icvp_min_page_scale"/>
+        <attr name="icvp_max_page_scale"/>
+        <attr name="icvp_medium_scaled"/>
+        <attr name="icvp_scroll_duration"/>
+        <attr name="icvp_interpolator"/>
+    </declare-styleable>
+
+    <declare-styleable name="FABToolbarLayout">
+        <attr name="showDuration" format="integer"/>
+        <attr name="hideDuration" format="integer"/>
+        <attr name="verticalMargin" format="dimension"/>
+        <attr name="horizontalMargin" format="dimension"/>
+        <attr name="fadeInPivotX" format="dimension"/>
+        <attr name="fadeInPivotY" format="dimension"/>
+        <attr name="fadeInFraction" format="float"/>
+        <attr name="fabId" format="reference"/>
+        <attr name="containerId" format="reference"/>
+        <attr name="fabToolbarId" format="reference"/>
+        <attr name="fabDrawableAnimationEnabled" format="boolean"/>
+    </declare-styleable>
+</resources>

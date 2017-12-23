@@ -1,0 +1,29 @@
+<com.atminfotech.barcodestorenew.CheckableLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:id="@+id/list_item"
+    android:minHeight="?android:listPreferredItemHeight"
+    android:gravity="center_vertical">
+
+
+    <TextView android:id="@android:id/text1"
+        android:duplicateParentState="true"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@drawable/hideable_text_color" />
+
+    <ImageView android:src="@drawable/ic_hideable_item"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
+
+</com.atminfotech.barcodestorenew.CheckableLinearLayout>

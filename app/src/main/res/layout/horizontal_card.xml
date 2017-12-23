@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="235dp">
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="130dp"
+            android:layout_height="235dp"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitCenter"
+                android:id="@+id/horizontalcardimg"
+                android:layout_weight="0.70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/imageplaceholder"
+                />
+            <LinearLayout
+                android:weightSum="2"
+                android:padding="5dp"
+                android:layout_weight="1.3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/horizontalcardname"
+                    android:layout_weight="1.20"
+                    android:typeface="serif"
+                    android:text="Zebra Scanner LS 1203"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp" />
+                <LinearLayout
+                    android:layout_weight="0.8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+                    <TextView
+
+                        android:textStyle="bold"
+                        android:textColor="#c29b0e"
+                        android:typeface="serif"
+                        android:text="Rs."
+                        android:textSize="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/horizontalcardrate"
+                        android:textStyle="bold"
+                        android:textColor="#daab71"
+                        android:typeface="serif"
+                        android:text="1599"
+                        android:textSize="11dp"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

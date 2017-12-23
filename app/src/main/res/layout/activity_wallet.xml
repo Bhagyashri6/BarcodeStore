@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.atminfotech.barcodestorenew.WalletActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/slider_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="15dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="4dp"
+        android:elevation="15dp">
+
+        <com.atminfotech.barcodestorenew.SliderLayout
+            android:id="@+id/slider"
+            style="@style/AlertDialog.AppCompat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            custom:pager_animation_span="1100"
+            custom:selected_color="@color/colorPrimary"
+            custom:selected_height="8dp"
+            custom:selected_padding_left="3dp"
+            custom:selected_padding_right="3dp"
+            custom:selected_width="8dp"
+            custom:shape="oval"
+            custom:unselected_color="#55555555"
+            custom:unselected_height="4dp"
+            custom:unselected_padding_left="3dp"
+            custom:unselected_padding_right="3dp"
+            custom:unselected_width="4dp" />
+
+    </android.support.v7.widget.CardView>
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:layout_below="@+id/slider_container"
+        android:id="@+id/banner_slider_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        app:selected_color="@color/colorPrimary"
+        app:unselected_color="@color/colorSub"
+        android:layout_centerHorizontal="true"
+        style="@style/AndroidImageSlider_Indicator" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="$15,000.00"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/banner_slider_indicator"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adjust_points"
+        android:layout_below="@+id/amount"/>
+
+    <Button
+        android:id="@+id/adjust_points"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Adjust Points"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

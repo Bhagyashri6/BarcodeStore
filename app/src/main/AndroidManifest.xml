@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.atminfotech.barcodestorenew">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.atminfotech.barcodestorenew.CustomFonts"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppBaseTheme"
+        tools:node="replace">
+        <activity
+            android:name="com.atminfotech.barcodestorenew.splash.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.RegisterActivity"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.register" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.main" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SearchProducts"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="@string/title_activity_search_products" />
+        <activity
+            android:name="com.atminfotech.barcodestorenew.CartActivity"
+            android:label="Cart"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:theme="@style/AppBaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.Cart" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.ProductsZebra"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="Zebra Products">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SubProductDekstopBarcodePrinter"
+            android:parentActivityName="com.atminfotech.barcodestorenew.ProductsZebra"
+            android:label="Basic Barcode Printer">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SubProductBasicBarcodeScanner"
+            android:parentActivityName="com.atminfotech.barcodestorenew.ProductsZebra"
+            android:label="Zebra Barcode Scanners">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SubProductMobileComputer"
+            android:parentActivityName="com.atminfotech.barcodestorenew.ProductsZebra"
+            android:label="Mobile Computers">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SubProductMobilePrinters"
+            android:parentActivityName="com.atminfotech.barcodestorenew.ProductsZebra"
+            android:label="Mobile Printers">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SubProductCardPrinters"
+            android:parentActivityName="com.atminfotech.barcodestorenew.ProductsZebra"
+            android:label="Card Printers">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SubProductIndustrialBarcode"
+            android:parentActivityName="com.atminfotech.barcodestorenew.ProductsZebra"
+            android:label="Industrial Barcode Printer">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SubProductRFIDBarcodeReaders"
+            android:parentActivityName="com.atminfotech.barcodestorenew.ProductsZebra"
+            android:label="Softwares">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SubProductKIOSKBarcodePrinters"
+            android:parentActivityName="com.atminfotech.barcodestorenew.ProductsZebra"
+            android:label="Accessories">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.ProductDetails"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="Product Details">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.ProductPrimera"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="Primera Products">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.ProductsPosiflex"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="Posiflex Products">
+            <intent-filter>
+                <action android:name="android.intent.action.Prodcuts" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.Support"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="Support"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.support" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.Rma"
+            android:label="Purchase History"
+            android:parentActivityName="com.atminfotech.barcodestorenew.Support">
+            <intent-filter>
+                <action android:name="android.intent.action.rma" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.OrderSummeryForRma"
+            android:label="Order Summery"
+            android:parentActivityName="com.atminfotech.barcodestorenew.Support">
+            <intent-filter>
+                <action android:name="android.intent.action.orderSummery" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.WarrantyIntermediate"
+            android:label="Product Selection"
+            android:parentActivityName="com.atminfotech.barcodestorenew.Support" />
+        <activity
+            android:name="com.atminfotech.barcodestorenew.NonWarrantyIntermediate"
+            android:label="Product Selection"
+            android:parentActivityName="com.atminfotech.barcodestorenew.Support" />
+        <activity
+            android:name="com.atminfotech.barcodestorenew.Warranty"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="@string/PH"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.warrentyIntermediate" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.NonWarranty"
+            android:label="@string/PH"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.nonWarrenty" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.AboutUs"
+            android:label="About Us"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity">
+            <intent-filter>
+
+                <action android:name="android.intent.action.AboutUs" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.atminfotech.barcodestorenew.OffersActivity" />
+        <activity
+            android:name="com.atminfotech.barcodestorenew.Softwares"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="Software">
+            <intent-filter>
+                <action android:name="android.intent.action.Software" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.SoftwareDetails"
+            android:label="Software"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.SoftwareDetails" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.atminfotech.barcodestorenew.WalletActivity"
+            android:parentActivityName="com.atminfotech.barcodestorenew.HomeActivity"
+            android:label="Wallet">
+            <intent-filter>
+                <action android:name="android.intent.action.WalletActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.atminfotech.barcodestorenew.ConnectivityReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
